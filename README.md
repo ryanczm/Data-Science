@@ -1,8 +1,13 @@
-# DS
+# Data Science
 
-This is a repo for past data science tests.
 
-* `ga_bike_destination_pred.ipynb` - Technical assessment for General Atlantic Junior Data Scientist role. 
-    * Given a biking dataset, I was asked to perform EDA, plot some graphs, data cleaning, feature engineering etc.
-    * The objective given was to predict ride duration (regression task) or ride end station (multiclass classification task). After modelling, my conclusion was that the dataset lacked predictive power (poor accuracy, f1, etc). Modelling libraries used were `catboost` and `vaex.ml` aside from the usual stack. 
-    * My suggestion given would be to naively predict end station by tracking user history and suggesting most frequent destination station conditioned on starting station. This would likely outperform the model while being more practical/achieving the objective better without any use of ML in the first place. On hindsight, maybe I shouldn't have told them that directly ...  
+# Bike Destination Prediction Project (Boston Bike Dataset)
+* I try predict the ride destination of a Bike sharing app to facilitate user recommendations. The dataset used is the [Boston Bike-Sharing Dataset](https://www.kaggle.com/datasets/jackdaoud/bluebikes-in-boston) collected from [BlueBikes](https://bluebikes.com/)
+* I first performed data cleaning and EDA to understand the data set, then did feature engineering and modelling.
+* Modelling libraries used were `catboost` (best for handling categorical features which were plenty) and `vaex.ml` (for processing very large datasets quickly) aside from the usual stack.
+* Prediction power is fairly weak. An alternative solution would be to naively predict end station by tracking user history and suggesting most frequent destination similar to many ride-hailing apps (Uber, Grab, etc).
+ 
+# Metals (Iron Ore Shipments) EDA Analysis
+
+* Adopted off an assignment by a metals trading company for a data analyst role. Given a dataset of daily dry bulk shipments of iron ore in between various ports in China, I perform some EDA and analysis in Pandas.
+* I look at various topics 
